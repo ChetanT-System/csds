@@ -1,0 +1,20 @@
+spring: 
+  jackson:
+    serialization: 
+      FAIL_ON_EMPTY_BEANS: false
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource: 
+    url: jdbc:postgresql://localhost:5432/csds
+    username: root
+    password: P@ssword21
+
+server:
+  port: 9094
+  servlet:
+    context-path: /core
+
+jwt: 
+  secret: BvPHGM8C0ia4uOuxxqPD5DTbWC9F9TWvPStp3pb7ARo0oK2mJ3pd3YG4lxA9i8bj6OTbadwezxgeEByY
+  expiration: 7200 #time it is second
